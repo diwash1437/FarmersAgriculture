@@ -52,7 +52,7 @@ public class CartTotal extends AppCompatActivity {
 
         CartsViewHolder  adapter = new CartsViewHolder();
         recyclerView.setAdapter(adapter);
-        //adapter.startListening();
+        adapter.startListening();
     }
 
 
