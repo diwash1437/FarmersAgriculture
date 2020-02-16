@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".Users.usersignup">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:layout_height="160dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register your Account"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_margin="16dp"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:inputType="text"
+        app:met_baseColor="@color/myTextColor"
+        app:met_iconPadding="0dp"
+        app:met_primaryColor="@color/myTextColor"
+        app:met_textColorHint="@color/myTextColor" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/Useremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:met_baseColor="@color/myTextColor"
+        app:met_iconPadding="0dp"
+        app:met_iconRight="@android:drawable/ic_dialog_email"
+        app:met_primaryColor="@color/myTextColor"
+        app:met_textColorHint="@color/myTextColor" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/Userphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="number"
+        app:met_baseColor="@color/myTextColor"
+        app:met_primaryColor="@color/myTextColor"
+        app:met_textColorHint="@color/myTextColor" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/Userpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:met_baseColor="@color/myTextColor"
+        app:met_primaryColor="@color/myTextColor"
+        app:met_textColorHint="@color/myTextColor" />
+    <Button
+        android:id="@+id/Usersignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="REGISTER"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:gravity="center"
+    tools:context=".Users.Userlogin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"/>
+            <TextView
+             android:id="@+id/signupuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+Create Customer account"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:layout_margin="16dp"
+                />
+
+
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_margin="16dp"
+        android:padding="16dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/login_phone_number_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+
+            android:inputType="number"
+            app:met_baseColor="@color/myTextColor"
+            app:met_iconPadding="0dp"
+            app:met_iconRight="@drawable/ic_email"
+            app:met_primaryColor="@color/myTextColor"
+            app:met_textColorHint="@color/myTextColor" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/login_password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:met_baseColor="@color/myTextColor"
+            app:met_primaryColor="@color/myTextColor"
+            app:met_textColorHint="@color/myTextColor" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_i"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/remember_me_chkb"
+                android:layout_width="wrap_content"
+                style="@style/Material.Drawable.CheckBox"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="0dp"
+                android:hint="Remember me"
+                app:met_baseColor="@color/myTextColor"
+                app:met_primaryColor="@color/myTextColor"
+                app:met_textColorHint="@color/myTextColor"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/forget_password_link"
+                android:hint="Forget password"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:text="Forget password"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                app:met_baseColor="@color/myTextColor"
+                app:met_primaryColor="@color/myTextColor"
+                app:met_textColorHint="@color/myTextColor"
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"
+
+
+            />
+
+        <LinearLayout
+            android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/not_admin_panel_link"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="0dp"
+               android:text="+I am not an Farmer?"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                app:met_baseColor="@color/myTextColor"
+                app:met_primaryColor="@color/myTextColor"
+                app:met_textColorHint="@color/myTextColor"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/admin_panel_link"
+                android:hint="Forget password"
+                android:layout_marginLeft="60dp"
+                android:layout_width="wrap_content"
+                android:text="+Farmer Login?"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                app:met_baseColor="@color/myTextColor"
+                app:met_primaryColor="@color/myTextColor"
+                app:met_textColorHint="@color/myTextColor"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

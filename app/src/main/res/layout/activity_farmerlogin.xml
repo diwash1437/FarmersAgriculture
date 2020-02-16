@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:gravity="center"
+    tools:context=".Farmer.Farmerlogin">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/signupfarmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+Create Farmer account"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:layout_margin="16dp"
+                />
+
+
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_margin="16dp"
+        android:padding="16dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/femail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+
+            android:inputType="textEmailAddress"
+            app:met_baseColor="@color/myTextColor"
+            app:met_iconPadding="0dp"
+            app:met_iconRight="@drawable/ic_email"
+            app:met_primaryColor="@color/myTextColor"
+            app:met_textColorHint="@color/myTextColor" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/fpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:met_baseColor="@color/myTextColor"
+            app:met_primaryColor="@color/myTextColor"
+            app:met_textColorHint="@color/myTextColor" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/fcheckbox"
+                android:layout_width="wrap_content"
+                style="@style/Material.Drawable.CheckBox"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="0dp"
+                android:hint="Remember me"
+                app:met_baseColor="@color/myTextColor"
+                app:met_primaryColor="@color/myTextColor"
+                app:met_textColorHint="@color/myTextColor"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/ffpassword"
+                android:hint="Forget password"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:text="Forget password"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                app:met_baseColor="@color/myTextColor"
+                app:met_primaryColor="@color/myTextColor"
+                app:met_textColorHint="@color/myTextColor"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/flogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+
+
+        />
+
+
+
+
+
+
+</LinearLayout>
